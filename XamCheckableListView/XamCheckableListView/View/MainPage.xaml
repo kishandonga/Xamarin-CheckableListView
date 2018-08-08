@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamCheckableListView.View.MainPage"
+             Title="Selection View">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="Select Single Item" 
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="5,40,5,5"
+                    Clicked="Handle_SingleSelectionView"/>
+
+            <Button Text="Select Multiple Item" 
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="5"
+                    Clicked="Handle_MultipleSelectionView"/>
+
+            <Label
+                x:Name="lblSelectedItem"
+                Text="Welcome to Xamarin.Forms!"
+                TextColor="Black"
+                FontSize="Large"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                HeightRequest="300"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

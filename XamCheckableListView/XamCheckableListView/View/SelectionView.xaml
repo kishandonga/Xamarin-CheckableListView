@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamCheckableListView"
+             xmlns:cb="clr-namespace:XamCheckableListView.Controls;assembly=XamCheckableListView"
+             x:Class="XamCheckableListView.SelectionView"
+             Title="Selection View">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItemDone" Order="Primary" Text="Done" Priority="0" Clicked="Clicked_MenuItemDone"/>
+    </ContentPage.ToolbarItems>
+    
+    <ListView 
+        x:Name="listView" 
+        CachingStrategy="RecycleElement"
+        ItemTapped="Handle_ItemTapped"
+        BackgroundColor="Transparent">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell> 
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+                        <Grid VerticalOptions="FillAndExpand">
+                            
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="70"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label x:Name="textLabel" 
+                                   Grid.Column="0" 
+                                   Text="{Binding Text}" 
+                                   Margin="12,0,0,0"
+                                   TextColor="Black"
+                                   FontSize="Medium"
+                                   HorizontalOptions="Start" 
+                                   VerticalOptions="Center"/>
+
+                            <Label x:Name="cbIsSelected" 
+                                   Text="✓"
+                                   Grid.Column="1" 
+                                   FontAttributes="Bold"
+                                   FontSize="Large"
+                                   TextColor="Orange"
+                                   IsVisible="{Binding IsSelected}" 
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center" />
+                        </Grid>
+                        <StackLayout BackgroundColor="LightGray" HorizontalOptions="Fill" HeightRequest="1"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
