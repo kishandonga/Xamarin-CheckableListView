@@ -14,12 +14,14 @@ namespace XamCheckableListView.View
         {
             InitializeComponent();
 
-            dogs = new List<SelectionViewModel>();
-            dogs.Add(new SelectionViewModel { IsSelected = false, Text = "Aigi" });
-            dogs.Add(new SelectionViewModel { IsSelected = true, Text = "Spitz" });
-            dogs.Add(new SelectionViewModel { IsSelected = false, Text = "Mastiff" });
-            dogs.Add(new SelectionViewModel { IsSelected = false, Text = "Finnish Spitz" });
-            dogs.Add(new SelectionViewModel { IsSelected = false, Text = "Briard" });
+            dogs = new List<SelectionViewModel>
+            {
+                new SelectionViewModel { IsSelected = false, Text = "Aigi" },
+                new SelectionViewModel { IsSelected = true, Text = "Spitz" },
+                new SelectionViewModel { IsSelected = false, Text = "Mastiff" },
+                new SelectionViewModel { IsSelected = false, Text = "Finnish Spitz" },
+                new SelectionViewModel { IsSelected = false, Text = "Briard" }
+            };
         }
 
         private void Handle_OnItemsSelected(object sender, SelectedItemEventArgs e)
