@@ -1,6 +1,8 @@
 # Xamarin Forms Checkable ListView
 
-![384x640,100%](Screenshots/demo.gif)
+<div align:left;display:inline;>
+<img width="384" height="640" src="https://github.com/kishandonga/Xamarin-CheckableListView/blob/master/Screenshots/demo.gif"/>
+</div>
 
 ***
 
