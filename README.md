@@ -1,6 +1,6 @@
 # Xamarin Forms Checkable ListView
 
-![](Screenshots/demo.gif)
+![384x640,100%](Screenshots/demo.gif)
 
 ***
 
@@ -8,7 +8,7 @@ This is an example code which you use instead of Picker in the xamarin form also
 
 ## Installation
 
-This two [`SelectionView.xaml`](Xamarin-CheckableListView/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml) and [`SelectionView.xaml.cs`](Xamarin-CheckableListView/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml.cs) added in your project. 
+This two files [`SelectionView.xaml`](Xamarin-CheckableListView/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml) and [`SelectionView.xaml.cs`](Xamarin-CheckableListView/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml.cs) add in your project. 
 
 ## Usage
 
