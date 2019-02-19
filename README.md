@@ -10,12 +10,12 @@ This is an example code which you use instead of Picker in the xamarin form also
 
 ## Installation
 
-This two files [`SelectionView.xaml`](Xamarin-CheckableListView/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml) and [`SelectionView.xaml.cs`](Xamarin-CheckableListView/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml.cs) add in your project. 
+This two files [`SelectionView.xaml`](https://github.com/kishandonga/Xamarin-CheckableListView/blob/master/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml) and [`SelectionView.xaml.cs`](https://github.com/kishandonga/Xamarin-CheckableListView/blob/master/XamCheckableListView/XamCheckableListView/View/SelectionView.xaml.cs) add in your project. 
 
 ## Usage
 
 Here's an example of code for the push and pop custom SelectionView page with passing required data. 
-You can see the complete code sample [here](Xamarin-CheckableListView/XamCheckableListView/XamCheckableListView/View/MainPage.xaml.cs):
+You can see the complete code sample [here](https://github.com/kishandonga/Xamarin-CheckableListView/blob/master/XamCheckableListView/XamCheckableListView/View/MainPage.xaml.cs)
 
 ### Contributing
 
